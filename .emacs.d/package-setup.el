@@ -17,6 +17,9 @@ There are two things you can do about this warning:
     (add-to-list 'package-archives (cons "gnu" (concat proto "://elpa.gnu.org/packages/")))))
 (package-initialize)
 
+(when (not package-archive-contents)
+  (package-refresh-contents))
+
 (defvar *packages*
   '(base16-theme
     cider
