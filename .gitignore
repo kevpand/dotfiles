@@ -1,5 +1,6 @@
 .emacs.d/elpa/
 .emacs.d/places
+.emacs.d/ido.last
 .quicklisp/dists/
 .quicklisp/local-projects/
 .quicklisp/tmp/
