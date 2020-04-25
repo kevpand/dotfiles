@@ -5,3 +5,8 @@
                                        (user-homedir-pathname))))
   (when (probe-file quicklisp-init)
     (load quicklisp-init)))
+
+#+quicklisp
+(dolist (x '(:quicklisp-slime-helper))
+  (when (not (ql:where-is-system x))
+    (ql:quickload x)))
