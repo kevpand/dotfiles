@@ -5,6 +5,7 @@
 
 (require 'better-defaults)
 
+(global-set-key (kbd "C-x g") 'magit-status)
 (load-theme 'sanityinc-tomorrow-night)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
@@ -26,3 +27,10 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 (setq ring-bell-function 'ignore)
+(setq lsp-keymap-prefix "s-l")
+
+(require 'lsp-mode)
+(add-hook 'c-mode-hook #'lsp)
+
+(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin" ":/usr/local/opt/llvm/bin"))
+(setq exec-path (append exec-path '("/usr/local/bin" "/usr/local/opt/llvm/bin")))

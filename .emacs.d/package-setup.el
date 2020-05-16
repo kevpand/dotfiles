@@ -23,6 +23,10 @@ There are two things you can do about this warning:
 (defvar *packages*
   '(base16-theme
     cider
+    geiser
+    sicp
+    lsp-mode
+    magit
     color-theme-sanityinc-tomorrow
     better-defaults))
 
