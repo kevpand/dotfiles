@@ -36,8 +36,11 @@ There are two things you can do about this warning:
     lsp-mode
     lsp-treemacs
     magit
+    paredit
     projectile
+    rainbow-delimiters
     sicp
+    treemacs
     which-key
     yasnippet))
 
