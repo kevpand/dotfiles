@@ -21,14 +21,25 @@ There are two things you can do about this warning:
   (package-refresh-contents))
 
 (defvar *packages*
-  '(base16-theme
+  '(avy
+    base16-theme
+    better-defaults
     cider
-    geiser
-    sicp
-    lsp-mode
-    magit
     color-theme-sanityinc-tomorrow
-    better-defaults))
+    company
+    dap-mode
+    flycheck
+    geiser
+    helm-lsp
+    helm-xref
+    hydra
+    lsp-mode
+    lsp-treemacs
+    magit
+    projectile
+    sicp
+    which-key
+    yasnippet))
 
 (dolist (x *packages*)
   (when (not (require x nil 'no-error))
