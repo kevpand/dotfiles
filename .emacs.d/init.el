@@ -27,9 +27,16 @@
 (require 'lsp-mode)
 (add-hook 'c-mode-hook #'lsp)
 
-(setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin" ":/usr/local/opt/llvm/bin"))
-(setq exec-path (append exec-path '("/usr/local/bin" "/usr/local/opt/llvm/bin")))
-(setq vc-follow-symlinks t)
+(setenv "PATH"
+        (concat (getenv "PATH")
+                ":/Library/TeX/texbin"
+                ":/usr/local/bin"
+                ":/usr/local/opt/llvm/bin"))
+(setq exec-path
+      (append exec-path
+              '("/Library/TeX/texbin"
+                "/usr/local/bin"
+                "/usr/local/opt/llvm/bin")))
 
 (require 'better-defaults)
 
@@ -54,3 +61,10 @@
   (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
   (require 'dap-cpptools)
   (yas-global-mode))
+
+(load-file (expand-file-name "~/.emacs.d/scala.el"))
+
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
