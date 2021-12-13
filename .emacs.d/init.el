@@ -1,3 +1,6 @@
+;; Ignore cl deprecation warning we can't do anything about.
+(setq byte-compile-warnings '(cl-functions))
+
 (load-file (expand-file-name "~/.emacs.d/package-setup.el"))
 
 (setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
