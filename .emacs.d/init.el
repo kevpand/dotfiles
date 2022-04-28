@@ -17,8 +17,7 @@
 (setq inhibit-startup-message t)
 (setq inhibit-startup-screen t)
 (load (expand-file-name "~/.quicklisp/slime-helper.el"))
-;; Replace "sbcl" with the path to your implementation
-(setq inferior-lisp-program "/usr/local/bin/sbcl")
+(setq inferior-lisp-program "sbcl")
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
@@ -32,12 +31,16 @@
 
 (setenv "PATH"
         (concat (getenv "PATH")
+                ":/Users/kevinanderson/.ghcup/bin"
+                ":/Users/kevinanderson/.local/bin"
                 ":/Library/TeX/texbin"
                 ":/usr/local/bin"
                 ":/usr/local/opt/llvm/bin"))
 (setq exec-path
       (append exec-path
-              '("/Library/TeX/texbin"
+              '("/Users/kevinanderson/.ghcup/bin"
+                "/Users/kevinanderson/.local/bin"
+                "/Library/TeX/texbin"
                 "/usr/local/bin"
                 "/usr/local/opt/llvm/bin")))
 
@@ -62,8 +65,7 @@
 
 (with-eval-after-load 'lsp-mode
   (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
-  (require 'dap-cpptools)
-  (yas-global-mode))
+  (require 'dap-cpptools))
 
 (load-file (expand-file-name "~/.emacs.d/scala.el"))
 
@@ -73,3 +75,7 @@
 (setq mac-option-modifier nil)
 
 (setq-default cursor-type 'bar)
+
+(require 'lsp-haskell)
+(add-hook 'haskell-mode-hook #'lsp)
+(add-hook 'haskell-literate-mode-hook #'lsp)
