@@ -11,3 +11,4 @@
 .emacs.d/.dap-breakpoints
 .emacs.d/recentf
 .emacs.d/history
+.emacs.d/.cache

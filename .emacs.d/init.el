@@ -46,7 +46,6 @@
 (setq mac-command-key-is-meta t)
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
-
 (setq-default cursor-type 'bar)
 
 (require 'lsp-haskell)
@@ -63,6 +62,7 @@
 (which-key-mode)
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'c++-mode-hook 'lsp)
+(add-hook 'c++-mode-hook #'modern-c++-font-lock-mode)
 
 (setq gc-cons-threshold (* 100 1024 1024)
       read-process-output-max (* 1024 1024)

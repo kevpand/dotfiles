@@ -18,6 +18,7 @@
     dap-mode
     flycheck
     geiser
+    geiser-guile
     helm-lsp
     helm-xref
     hydra
@@ -26,6 +27,7 @@
     lsp-mode
     lsp-treemacs
     magit
+    modern-cpp-font-lock
     paredit
     projectile
     rainbow-delimiters
