@@ -24,10 +24,6 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 (setq ring-bell-function 'ignore)
-(setq lsp-keymap-prefix "s-l")
-
-(require 'lsp-mode)
-(add-hook 'c-mode-hook #'lsp)
 
 (setenv "PATH"
         (concat (getenv "PATH")
@@ -46,6 +42,18 @@
 
 (require 'better-defaults)
 
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
+
+(setq-default cursor-type 'bar)
+
+(require 'lsp-haskell)
+(add-hook 'haskell-mode-hook #'lsp)
+(add-hook 'haskell-literate-mode-hook #'lsp)
+
+;; sample `helm' configuration use https://github.com/emacs-helm/helm/ for details
 (helm-mode)
 (require 'helm-xref)
 (define-key global-map [remap find-file] #'helm-find-files)
@@ -65,15 +73,5 @@
 
 (with-eval-after-load 'lsp-mode
   (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
-  (require 'dap-cpptools))
-
-(setq mac-option-key-is-meta nil)
-(setq mac-command-key-is-meta t)
-(setq mac-command-modifier 'meta)
-(setq mac-option-modifier nil)
-
-(setq-default cursor-type 'bar)
-
-(require 'lsp-haskell)
-(add-hook 'haskell-mode-hook #'lsp)
-(add-hook 'haskell-literate-mode-hook #'lsp)
+  (require 'dap-cpptools)
+  (yas-global-mode))

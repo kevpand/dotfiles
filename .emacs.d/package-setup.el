@@ -21,6 +21,8 @@
     helm-lsp
     helm-xref
     hydra
+    ledger-mode
+    lsp-haskell
     lsp-mode
     lsp-treemacs
     magit
