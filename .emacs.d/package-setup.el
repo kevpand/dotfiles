@@ -18,7 +18,16 @@
     dap-mode
     flycheck
     geiser
+    geiser-chez
+    geiser-chibi
+    geiser-chicken
+    geiser-gambit
+    geiser-gauche
     geiser-guile
+    geiser-kawa
+    geiser-mit
+    geiser-racket
+    geiser-stklos
     helm-lsp
     helm-xref
     hydra
