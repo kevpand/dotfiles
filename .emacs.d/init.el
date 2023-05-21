@@ -75,3 +75,11 @@
   (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
   (require 'dap-cpptools)
   (yas-global-mode))
+
+(load (expand-file-name "~/.roswell/helper.el"))
+
+(setq inferior-lisp-program "ros -Q run")
+(set-face-attribute 'default nil :height 160)
+
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))

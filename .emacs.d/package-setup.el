@@ -13,6 +13,8 @@
     color-theme-sanityinc-tomorrow
     company
     dap-mode
+    eglot
+    exec-path-from-shell
     flycheck
     geiser
     geiser-chez
@@ -34,6 +36,7 @@
     paredit
     projectile
     rainbow-delimiters
+    rust-mode
     sicp
     treemacs
     which-key
