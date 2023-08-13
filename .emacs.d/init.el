@@ -16,8 +16,6 @@
 (setq inhibit-startup-hooks t)
 (setq inhibit-startup-message t)
 (setq inhibit-startup-screen t)
-(load (expand-file-name "~/.quicklisp/slime-helper.el"))
-(setq inferior-lisp-program "sbcl")
 (fset 'yes-or-no-p 'y-or-n-p)
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
@@ -79,7 +77,7 @@
 (load (expand-file-name "~/.roswell/helper.el"))
 
 (setq inferior-lisp-program "ros -Q run")
-(set-face-attribute 'default nil :height 160)
+(set-face-attribute 'default nil :height 110)
 
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
