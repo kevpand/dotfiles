@@ -60,3 +60,7 @@
 
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
+
+(when (string= "gnu/linux" system-type)
+  (setq  x-meta-keysym 'super
+         x-super-keysym 'meta))
