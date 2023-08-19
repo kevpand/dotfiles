@@ -28,7 +28,6 @@
     helm-xref
     hydra
     ledger-mode
-    lsp-haskell
     lsp-mode
     lsp-treemacs
     magit
@@ -36,7 +35,6 @@
     paredit
     projectile
     rainbow-delimiters
-    rust-mode
     sicp
     treemacs
     which-key
