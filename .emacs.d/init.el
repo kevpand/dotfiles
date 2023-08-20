@@ -64,3 +64,6 @@
   (setq  x-meta-keysym 'super
          x-super-keysym 'meta)
   (set-face-attribute 'default nil :height 120))
+
+(when (string= "darwin" system-type)
+  (set-face-attribute 'default nil :height 140))
