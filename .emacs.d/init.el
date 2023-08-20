@@ -56,11 +56,11 @@
 (load (expand-file-name "~/.roswell/helper.el"))
 
 (setq inferior-lisp-program "ros -Q run")
-(set-face-attribute 'default nil :height 110)
 
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
 (when (string= "gnu/linux" system-type)
   (setq  x-meta-keysym 'super
-         x-super-keysym 'meta))
+         x-super-keysym 'meta)
+  (set-face-attribute 'default nil :height 120))
