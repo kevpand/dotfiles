@@ -64,4 +64,4 @@
   (set-face-attribute 'default nil :height 120))
 
 (when (string= "darwin" system-type)
-  (set-face-attribute 'default nil :height 140))
+  (set-face-attribute 'default nil :height 160))
