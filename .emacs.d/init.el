@@ -53,8 +53,6 @@
 (define-key global-map [remap execute-extended-command] #'helm-M-x)
 (define-key global-map [remap switch-to-buffer] #'helm-mini)
 
-(load (expand-file-name "~/.roswell/helper.el"))
-
 (setq inferior-lisp-program "ros -Q run")
 
 (when (memq window-system '(mac ns x))

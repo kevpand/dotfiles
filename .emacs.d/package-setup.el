@@ -36,6 +36,12 @@
     projectile
     rainbow-delimiters
     sicp
+    sly
+    sly-asdf
+    sly-macrostep
+    sly-named-readtables
+    sly-quicklisp
+    sly-repl-ansi-color
     treemacs
     which-key
     yasnippet))
