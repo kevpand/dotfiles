@@ -65,3 +65,13 @@
 
 (when (string= "darwin" system-type)
   (set-face-attribute 'default nil :height 160))
+
+(defun pretty-lambda ()
+  (setq prettify-symbols-alist
+        '(("lambda" . 955)
+          ("fn" . 955))))
+
+(add-hook 'lisp-mode-hook 'pretty-lambda)
+(add-hook 'scheme-mode-hook 'pretty-lambda)
+(add-hook 'clojure-mode-hook 'pretty-lambda)
+(global-prettify-symbols-mode 1)
