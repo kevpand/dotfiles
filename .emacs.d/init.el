@@ -75,3 +75,8 @@
 (add-hook 'scheme-mode-hook 'pretty-lambda)
 (add-hook 'clojure-mode-hook 'pretty-lambda)
 (global-prettify-symbols-mode 1)
+
+  (set-face-attribute 'default nil :height 140))
+
+(setq vc-follow-symlinks t)
+(put 'downcase-region 'disabled nil)
