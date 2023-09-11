@@ -6,8 +6,7 @@
   (package-refresh-contents))
 
 (defvar *packages*
-  '(auctex
-    avy
+  '(avy
     base16-theme
     better-defaults
     cider
