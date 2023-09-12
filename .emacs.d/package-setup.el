@@ -27,6 +27,11 @@
     helm-lsp
     helm-xref
     hydra
+    julia-formatter
+    julia-mode
+    julia-repl
+    julia-shell
+    julia-ts-mode
     ledger-mode
     lsp-mode
     lsp-treemacs
