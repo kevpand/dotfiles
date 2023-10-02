@@ -10,6 +10,7 @@
     base16-theme
     better-defaults
     cider
+    clang-format
     color-theme-sanityinc-tomorrow
     company
     dap-mode
@@ -30,8 +31,6 @@
     julia-mode
     julia-repl
     ledger-mode
-    lsp-mode
-    lsp-treemacs
     magit
     modern-cpp-font-lock
     paredit
@@ -44,13 +43,8 @@
     sly-named-readtables
     sly-quicklisp
     sly-repl-ansi-color
-    treemacs
-    which-key
-    yasnippet))
+    which-key))
 
 (dolist (x *packages*)
   (when (not (require x nil 'no-error))
-    (use-package x
-      :ensure t
-      :defer t)))
-
+    (package-install x)))
