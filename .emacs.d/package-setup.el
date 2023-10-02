@@ -27,11 +27,8 @@
     helm-lsp
     helm-xref
     hydra
-    julia-formatter
     julia-mode
     julia-repl
-    julia-shell
-    julia-ts-mode
     ledger-mode
     lsp-mode
     lsp-treemacs
@@ -53,4 +50,7 @@
 
 (dolist (x *packages*)
   (when (not (require x nil 'no-error))
-    (package-install x)))
+    (use-package x
+      :ensure t
+      :defer t)))
+

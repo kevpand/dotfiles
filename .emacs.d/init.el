@@ -66,6 +66,8 @@
 (when (string= "darwin" system-type)
   (set-face-attribute 'default nil :height 160))
 
+(add-hook 'julia-mode-hook 'julia-repl-mode)
+
 (defun pretty-lambda ()
   (setq prettify-symbols-alist
         '(("lambda" . 955)

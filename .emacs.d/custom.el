@@ -6,7 +6,7 @@
  '(custom-safe-themes
    '("06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" default))
  '(package-selected-packages
-   '(julia-formatter julia-mode julia-repl julia-shell julia-ts-mode auctex yaml-mode sly-asdf sly-macrostep sly-named-readtables sly-quicklisp sly-repl-ansi-color sly exec-path-from-shell dockerfile-mode docker-compose-mode geiser-racket ledger-mode lsp-haskell haskell-mode yasnippet which-key use-package sicp sbt-mode rainbow-delimiters projectile paredit magit lsp-ui lsp-metals helm-xref helm-lsp geiser flycheck company color-theme-sanityinc-tomorrow cider better-defaults base16-theme)))
+   '(sml-mode julia-mode julia-repl auctex yaml-mode sly-asdf sly-macrostep sly-named-readtables sly-quicklisp sly-repl-ansi-color sly exec-path-from-shell dockerfile-mode docker-compose-mode geiser-racket ledger-mode lsp-haskell haskell-mode yasnippet which-key use-package sicp sbt-mode rainbow-delimiters projectile paredit magit lsp-ui lsp-metals helm-xref helm-lsp geiser flycheck company color-theme-sanityinc-tomorrow cider better-defaults base16-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
