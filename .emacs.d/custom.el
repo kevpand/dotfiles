@@ -6,7 +6,7 @@
  '(custom-safe-themes
    '("06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" default))
  '(package-selected-packages
-   '(modern-cpp-font-lock hydra geiser-mit geiser-kawa geiser-guile geiser-gambit geiser-chibi geiser-chez dap-mode clang-format avy x sml-mode julia-mode julia-repl auctex yaml-mode sly-asdf sly-macrostep sly-named-readtables sly-quicklisp sly-repl-ansi-color sly exec-path-from-shell dockerfile-mode docker-compose-mode geiser-racket ledger-mode lsp-haskell haskell-mode yasnippet which-key use-package sicp sbt-mode rainbow-delimiters projectile paredit magit lsp-ui lsp-metals helm-xref helm-lsp geiser flycheck company color-theme-sanityinc-tomorrow cider better-defaults base16-theme)))
+   '(cmake-mode yasnippet which-key sml-mode sly-repl-ansi-color sly-quicklisp sly-named-readtables sly-macrostep sly-asdf sicp rust-mode rainbow-delimiters projectile paredit modern-cpp-font-lock magit lsp-haskell ledger-mode julia-repl julia-mode helm-xref helm-lsp geiser-racket geiser-mit geiser-kawa geiser-guile geiser-gambit geiser-chibi geiser-chez flycheck exec-path-from-shell dockerfile-mode docker-compose-mode dap-mode company color-theme-sanityinc-tomorrow clang-format cider better-defaults base16-theme avy auctex)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

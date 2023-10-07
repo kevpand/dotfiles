@@ -11,6 +11,7 @@
     better-defaults
     cider
     clang-format
+    cmake-mode
     color-theme-sanityinc-tomorrow
     company
     dap-mode
