@@ -5,8 +5,10 @@
 
 (setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
 (load-file custom-file)
+
+(load-theme 'solarized-dark t)
+
 (global-set-key (kbd "C-x g") 'magit-status)
-(load-theme 'sanityinc-tomorrow-night)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
@@ -59,14 +61,10 @@
   (exec-path-from-shell-initialize))
 
 (when (string= "gnu/linux" system-type)
-  (setq  x-meta-keysym 'super
-         x-super-keysym 'meta)
   (set-face-attribute 'default nil :height 120))
 
 (when (string= "darwin" system-type)
   (set-face-attribute 'default nil :height 160))
-
-(add-hook 'julia-mode-hook 'julia-repl-mode)
 
 (defun pretty-lambda ()
   (setq prettify-symbols-alist

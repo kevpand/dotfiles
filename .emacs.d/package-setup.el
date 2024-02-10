@@ -6,18 +6,10 @@
   (package-refresh-contents))
 
 (defvar *packages*
-  '(avy
-    base16-theme
+  '(base16-theme
     better-defaults
     cider
-    clang-format
-    cmake-mode
-    color-theme-sanityinc-tomorrow
-    company
-    dap-mode
-    eglot
     exec-path-from-shell
-    flycheck
     geiser
     geiser-chez
     geiser-chibi
@@ -28,12 +20,7 @@
     geiser-racket
     helm-lsp
     helm-xref
-    hydra
-    julia-mode
-    julia-repl
-    ledger-mode
     magit
-    modern-cpp-font-lock
     paredit
     projectile
     rainbow-delimiters
@@ -44,7 +31,8 @@
     sly-named-readtables
     sly-quicklisp
     sly-repl-ansi-color
-    which-key))
+    solarized-theme
+    zenburn-theme))
 
 (dolist (x *packages*)
   (when (not (require x nil 'no-error))
