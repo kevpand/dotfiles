@@ -61,7 +61,7 @@
   (exec-path-from-shell-initialize))
 
 (when (string= "gnu/linux" system-type)
-  (set-face-attribute 'default nil :height 120))
+  (set-face-attribute 'default nil :height 140))
 
 (when (string= "darwin" system-type)
   (set-face-attribute 'default nil :height 160))
