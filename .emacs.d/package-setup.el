@@ -6,9 +6,9 @@
   (package-refresh-contents))
 
 (defvar *packages*
-  '(base16-theme
-    better-defaults
+  '(better-defaults
     cider
+    ein
     exec-path-from-shell
     geiser
     geiser-chez
