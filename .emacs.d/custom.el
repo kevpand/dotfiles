@@ -8,13 +8,7 @@
      "6fc9e40b4375d9d8d0d9521505849ab4d04220ed470db0b78b700230da0a86c1"
      "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a"
      default))
- '(package-selected-packages
-   '(auctex better-defaults chatgpt-shell cider claude-code
-            docker-compose-mode ein exec-path-from-shell geiser-chez
-            geiser-chibi geiser-gambit geiser-guile geiser-kawa
-            geiser-mit geiser-racket haskell-mode helm-lsp helm-xref
-            magit paredit projectile rainbow-delimiters sicp slime
-            solarized-theme zenburn-theme))
+ '(package-selected-packages nil)
  '(package-vc-selected-packages
    '((claude-code :url "https://github.com/stevemolitor/claude-code.el"))))
 (custom-set-faces

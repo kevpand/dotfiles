@@ -17,11 +17,14 @@
     geiser-kawa
     geiser-mit
     geiser-racket
+    haskell-mode
     magit
     projectile
     sicp
     slime
-    solarized-theme))
+    sml-mode
+    solarized-theme
+    tuareg))
 
 (dolist (x *packages*)
   (when (not (require x nil 'no-error))
