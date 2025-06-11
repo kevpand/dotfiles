@@ -6,9 +6,8 @@
   (package-refresh-contents))
 
 (defvar *packages*
-  '(better-defaults
-    cider
-    ein
+  '(auctex
+    better-defaults
     exec-path-from-shell
     geiser
     geiser-chez
@@ -18,21 +17,11 @@
     geiser-kawa
     geiser-mit
     geiser-racket
-    helm-lsp
-    helm-xref
     magit
-    paredit
     projectile
-    rainbow-delimiters
     sicp
-    sly
-    sly-asdf
-    sly-macrostep
-    sly-named-readtables
-    sly-quicklisp
-    sly-repl-ansi-color
-    solarized-theme
-    zenburn-theme))
+    slime
+    solarized-theme))
 
 (dolist (x *packages*)
   (when (not (require x nil 'no-error))

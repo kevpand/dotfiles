@@ -6,7 +6,7 @@
 (setq custom-file (expand-file-name "~/.emacs.d/custom.el"))
 (load-file custom-file)
 
-(load-theme 'solarized-dark t)
+(load-theme 'solarized-zenburn t)
 
 (global-set-key (kbd "C-x g") 'magit-status)
 (menu-bar-mode -1)
@@ -25,21 +25,6 @@
       `((".*" ,temporary-file-directory t)))
 (setq ring-bell-function 'ignore)
 
-(setenv "PATH"
-        (concat (getenv "PATH")
-                ":/Users/kevinanderson/.ghcup/bin"
-                ":/Users/kevinanderson/.local/bin"
-                ":/Library/TeX/texbin"
-                ":/usr/local/bin"
-                ":/usr/local/opt/llvm/bin"))
-(setq exec-path
-      (append exec-path
-              '("/Users/kevinanderson/.ghcup/bin"
-                "/Users/kevinanderson/.local/bin"
-                "/Library/TeX/texbin"
-                "/usr/local/bin"
-                "/usr/local/opt/llvm/bin")))
-
 (require 'better-defaults)
 
 (setq mac-option-key-is-meta nil)
@@ -55,13 +40,14 @@
 (define-key global-map [remap execute-extended-command] #'helm-M-x)
 (define-key global-map [remap switch-to-buffer] #'helm-mini)
 
-(setq inferior-lisp-program "ros -Q run")
+;; (setq inferior-lisp-program "ros -Q run")
+(setq inferior-lisp-program "sbcl")
 
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
 (when (string= "gnu/linux" system-type)
-  (set-face-attribute 'default nil :height 140))
+  (set-face-attribute 'default nil :height 120))
 
 (when (string= "darwin" system-type)
   (set-face-attribute 'default nil :height 160))
