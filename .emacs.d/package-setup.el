@@ -18,6 +18,8 @@
     geiser-mit
     geiser-racket
     haskell-mode
+    helm
+    helm-xref
     magit
     projectile
     sicp
